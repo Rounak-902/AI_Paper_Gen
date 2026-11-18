@@ -132,12 +132,12 @@ def load_curriculum_bank_golden_set(
     """Load every valid P2 bank row; never maintain a second question fixture set."""
 
     root = _repo_root()
-    bank_file = Path(bank_path) if bank_path is not None else root / "sample_import.json"
-    curriculum_file = (
-        Path(curriculum_path)
-        if curriculum_path is not None
-        else root / "seed_curriculum_cbse_class10_science.json"
-    )
+    if bank_path is None:
+        raise ValueError("bank_path is required; sample datasets are not shipped")
+    if curriculum_path is None:
+        raise ValueError("curriculum_path is required; curriculum samples are not shipped")
+    bank_file = Path(bank_path)
+    curriculum_file = Path(curriculum_path)
     bank_rows = json.loads(bank_file.read_text(encoding="utf-8"))
     curriculum_seed = json.loads(curriculum_file.read_text(encoding="utf-8"))
     if not isinstance(bank_rows, list) or not bank_rows:

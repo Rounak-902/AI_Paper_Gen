@@ -194,7 +194,7 @@ class OfflineEvaluator:
         variant: EvaluationVariant,
         cases: Iterable[GoldenCase],
         runner: CaseRunner,
-        benchmark_source: str = "sample_import.json + seed_curriculum_cbse_class10_science.json",
+        benchmark_source: str = "user-provided golden set",
     ) -> tuple[EvaluationReport, tuple[EvalAttempt, ...]]:
         frozen_cases = tuple(cases)
         if not frozen_cases:

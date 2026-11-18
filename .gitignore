@@ -49,6 +49,14 @@ output/
 tmp/
 scratch/
 spikes/
+complete_*seed*.json
+complete_*examples*.json
+sample*.json
+*sample*.json
+seed*.json
+*seed*.json
+*import-ready*.json
+**/curriculum-import-example.json
 *.evidence.json
 **/*_evidence.json
 docs/docs/evidence/

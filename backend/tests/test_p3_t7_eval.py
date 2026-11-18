@@ -46,7 +46,15 @@ def _variant(name: str, generation_model: str = "test-model-generate-v1") -> Eva
 
 
 def test_golden_set_reuses_complete_real_p2_bank():
-    cases = load_curriculum_bank_golden_set()
+    root = Path(__file__).resolve().parents[2]
+    bank = root / "sample_import.json"
+    curriculum = root / "seed_curriculum_cbse_class10_science.json"
+    if not bank.exists() or not curriculum.exists():
+        pytest.skip("External sample fixtures are intentionally not shipped")
+    cases = load_curriculum_bank_golden_set(
+        bank_path=bank,
+        curriculum_path=curriculum,
+    )
     assert len(cases) == 79
     assert len({case.chapter_name for case in cases}) == 13
     assert len({case.question.qtype for case in cases}) == 12
@@ -57,7 +65,10 @@ def test_golden_set_reuses_complete_real_p2_bank():
 
 def test_s4_corpus_is_a_query_layer_over_real_bank_targets():
     root = Path(__file__).resolve().parents[2]
-    bank = json.loads((root / "sample_import.json").read_text(encoding="utf-8"))
+    bank_path = root / "sample_import.json"
+    if not bank_path.exists():
+        pytest.skip("External sample fixtures are intentionally not shipped")
+    bank = json.loads(bank_path.read_text(encoding="utf-8"))
     corpus = json.loads(
         (root / "spikes/retrieval_paraphrase/corpus.json").read_text(encoding="utf-8")
     )

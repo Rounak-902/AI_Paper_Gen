@@ -287,8 +287,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Seed PaperGen database from JSON.")
     parser.add_argument(
         "--file",
-        default="../complete_seed_example.json",
-        help="Path to the seed JSON file",
+        required=True,
+        help="Path to an explicitly supplied seed JSON file",
     )
     parser.add_argument(
         "--superadmin",
