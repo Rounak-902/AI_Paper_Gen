@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "board": {
+    "code": "CBSE",
+    "name": "Central Board of Secondary Education",
+    "curriculumVersion": {
+      "academicYear": "2026-27",
+      "label": "CBSE 2026-27 Curriculum",
+      "effectiveFrom": "2026-04-01",
+      "finalStatus": "active",
+      "supersedeActive": true
+    },
+    "classes": [
+      {
+        "name": "Grade 6",
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "chapters": [
+              {
+                "seq": 1,
+                "title": "Patterns in Mathematics",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH01-LO01",
+                    "description": "Recognise, describe and extend patterns in numbers and other mathematical situations."
+                  },
+                  {
+                    "code": "MAT-06-CH01-LO02",
+                    "description": "Use number sequences and visual or geometric patterns to make observations, predictions and explanations."
+                  },
+                  {
+                    "code": "MAT-06-CH01-LO03",
+                    "description": "Identify and explain patterns involving whole numbers, including relationships among numbers."
+                  }
+                ]
+              },
+              {
+                "seq": 2,
+                "title": "Lines and Angles",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH02-LO01",
+                    "description": "Identify and describe points, line segments, lines and rays using appropriate mathematical language and notation."
+                  },
+                  {
+                    "code": "MAT-06-CH02-LO02",
+                    "description": "Recognise, classify and compare angles and understand relationships between lines and angles."
+                  },
+                  {
+                    "code": "MAT-06-CH02-LO03",
+                    "description": "Use geometric reasoning to analyse figures involving lines, line segments, rays and angles."
+                  }
+                ]
+              },
+              {
+                "seq": 3,
+                "title": "Number Play",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH03-LO01",
+                    "description": "Explore numbers through puzzles, arrangements and everyday situations and explain the patterns observed."
+                  },
+                  {
+                    "code": "MAT-06-CH03-LO02",
+                    "description": "Use properties of numbers and operations to solve number-based problems and justify conclusions."
+                  },
+                  {
+                    "code": "MAT-06-CH03-LO03",
+                    "description": "Investigate special number arrangements and develop systematic strategies for solving number puzzles."
+                  }
+                ]
+              },
+              {
+                "seq": 4,
+                "title": "Data Handling and Presentation",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH04-LO01",
+                    "description": "Collect, organise and represent data using appropriate tables and graphical representations."
+                  },
+                  {
+                    "code": "MAT-06-CH04-LO02",
+                    "description": "Read and interpret data presented in tables, pictographs, bar graphs and other representations."
+                  },
+                  {
+                    "code": "MAT-06-CH04-LO03",
+                    "description": "Use data to compare quantities, identify patterns and make reasonable inferences."
+                  }
+                ]
+              },
+              {
+                "seq": 5,
+                "title": "Prime Time",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH05-LO01",
+                    "description": "Identify and use factors and multiples of whole numbers in mathematical situations."
+                  },
+                  {
+                    "code": "MAT-06-CH05-LO02",
+                    "description": "Recognise prime and composite numbers and use divisibility ideas to analyse numbers."
+                  },
+                  {
+                    "code": "MAT-06-CH05-LO03",
+                    "description": "Find and apply common factors, common multiples, prime factorisation and related number relationships."
+                  }
+                ]
+              },
+              {
+                "seq": 6,
+                "title": "Perimeter and Area",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH06-LO01",
+                    "description": "Understand perimeter as the distance around a closed figure and calculate the perimeter of common shapes."
+                  },
+                  {
+                    "code": "MAT-06-CH06-LO02",
+                    "description": "Understand area as the measure of a surface and determine areas using appropriate units and methods."
+                  },
+                  {
+                    "code": "MAT-06-CH06-LO03",
+                    "description": "Apply perimeter and area concepts to solve problems involving rectangles, squares and other plane figures."
+                  }
+                ]
+              },
+              {
+                "seq": 7,
+                "title": "Fractions",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH07-LO01",
+                    "description": "Represent fractions as equal shares and locate and compare fractions using visual and numerical representations."
+                  },
+                  {
+                    "code": "MAT-06-CH07-LO02",
+                    "description": "Recognise equivalent fractions and use common denominators or other strategies to compare and order fractions."
+                  },
+                  {
+                    "code": "MAT-06-CH07-LO03",
+                    "description": "Perform addition, subtraction and other appropriate operations with fractions in meaningful contexts."
+                  }
+                ]
+              },
+              {
+                "seq": 8,
+                "title": "Playing with Constructions",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH08-LO01",
+                    "description": "Use a ruler and compass to construct and investigate geometric figures accurately."
+                  },
+                  {
+                    "code": "MAT-06-CH08-LO02",
+                    "description": "Construct circles and identify the centre, radius and related geometric features."
+                  },
+                  {
+                    "code": "MAT-06-CH08-LO03",
+                    "description": "Follow construction steps, observe geometric properties and verify constructions through measurement and reasoning."
+                  }
+                ]
+              },
+              {
+                "seq": 9,
+                "title": "Symmetry",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH09-LO01",
+                    "description": "Identify symmetry in familiar objects, figures and patterns and describe repeated arrangements."
+                  },
+                  {
+                    "code": "MAT-06-CH09-LO02",
+                    "description": "Identify lines of symmetry and determine whether figures have mirror symmetry."
+                  },
+                  {
+                    "code": "MAT-06-CH09-LO03",
+                    "description": "Explore rotational patterns and recognise symmetry in geometric and real-world designs."
+                  }
+                ]
+              },
+              {
+                "seq": 10,
+                "title": "The Other Side of Zero",
+                "learningOutcomes": [
+                  {
+                    "code": "MAT-06-CH10-LO01",
+                    "description": "Understand integers as numbers that include positive numbers, zero and negative numbers, and represent them on a number line."
+                  },
+                  {
+                    "code": "MAT-06-CH10-LO02",
+                    "description": "Compare and order integers using their positions on the number line and interpret positive and negative quantities in context."
+                  },
+                  {
+                    "code": "MAT-06-CH10-LO03",
+                    "description": "Use addition and subtraction of integers to solve problems involving changes, directions and quantities on either side of zero."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

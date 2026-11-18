@@ -1,0 +1,427 @@
+{
+    "schemaVersion":  1,
+    "board":  {
+                  "code":  "CBSE",
+                  "name":  "Central Board of Secondary Education",
+                  "curriculumVersion":  {
+                                            "academicYear":  "2026-27",
+                                            "label":  "CBSE 2026-27 Curriculum",
+                                            "effectiveFrom":  "2026-04-01",
+                                            "finalStatus":  "active",
+                                            "supersedeActive":  true
+                                        },
+                  "classes":  [
+                                  {
+                                      "name":  "Grade 6",
+                                      "subjects":  [
+                                                       {
+                                                           "name":  "Mathematics",
+                                                           "chapters":  [
+                                                                            {
+                                                                                "seq":  1,
+                                                                                "title":  "Patterns in Mathematics",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH01-LO01",
+                                                                                                             "description":  "Recognise, describe and extend patterns in numbers and other mathematical situations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH01-LO02",
+                                                                                                             "description":  "Use number sequences and visual or geometric patterns to make observations, predictions and explanations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH01-LO03",
+                                                                                                             "description":  "Identify and explain patterns involving whole numbers, including relationships among numbers."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  2,
+                                                                                "title":  "Lines and Angles",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH02-LO01",
+                                                                                                             "description":  "Identify and describe points, line segments, lines and rays using appropriate mathematical language and notation."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH02-LO02",
+                                                                                                             "description":  "Recognise, classify and compare angles and understand relationships between lines and angles."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH02-LO03",
+                                                                                                             "description":  "Use geometric reasoning to analyse figures involving lines, line segments, rays and angles."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  3,
+                                                                                "title":  "Number Play",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH03-LO01",
+                                                                                                             "description":  "Explore numbers through puzzles, arrangements and everyday situations and explain the patterns observed."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH03-LO02",
+                                                                                                             "description":  "Use properties of numbers and operations to solve number-based problems and justify conclusions."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH03-LO03",
+                                                                                                             "description":  "Investigate special number arrangements and develop systematic strategies for solving number puzzles."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  4,
+                                                                                "title":  "Data Handling and Presentation",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH04-LO01",
+                                                                                                             "description":  "Collect, organise and represent data using appropriate tables and graphical representations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH04-LO02",
+                                                                                                             "description":  "Read and interpret data presented in tables, pictographs, bar graphs and other representations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH04-LO03",
+                                                                                                             "description":  "Use data to compare quantities, identify patterns and make reasonable inferences."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  5,
+                                                                                "title":  "Prime Time",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH05-LO01",
+                                                                                                             "description":  "Identify and use factors and multiples of whole numbers in mathematical situations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH05-LO02",
+                                                                                                             "description":  "Recognise prime and composite numbers and use divisibility ideas to analyse numbers."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH05-LO03",
+                                                                                                             "description":  "Find and apply common factors, common multiples, prime factorisation and related number relationships."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  6,
+                                                                                "title":  "Perimeter and Area",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH06-LO01",
+                                                                                                             "description":  "Understand perimeter as the distance around a closed figure and calculate the perimeter of common shapes."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH06-LO02",
+                                                                                                             "description":  "Understand area as the measure of a surface and determine areas using appropriate units and methods."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH06-LO03",
+                                                                                                             "description":  "Apply perimeter and area concepts to solve problems involving rectangles, squares and other plane figures."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  7,
+                                                                                "title":  "Fractions",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH07-LO01",
+                                                                                                             "description":  "Represent fractions as equal shares and locate and compare fractions using visual and numerical representations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH07-LO02",
+                                                                                                             "description":  "Recognise equivalent fractions and use common denominators or other strategies to compare and order fractions."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH07-LO03",
+                                                                                                             "description":  "Perform addition, subtraction and other appropriate operations with fractions in meaningful contexts."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  8,
+                                                                                "title":  "Playing with Constructions",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH08-LO01",
+                                                                                                             "description":  "Use a ruler and compass to construct and investigate geometric figures accurately."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH08-LO02",
+                                                                                                             "description":  "Construct circles and identify the centre, radius and related geometric features."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH08-LO03",
+                                                                                                             "description":  "Follow construction steps, observe geometric properties and verify constructions through measurement and reasoning."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  9,
+                                                                                "title":  "Symmetry",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH09-LO01",
+                                                                                                             "description":  "Identify symmetry in familiar objects, figures and patterns and describe repeated arrangements."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH09-LO02",
+                                                                                                             "description":  "Identify lines of symmetry and determine whether figures have mirror symmetry."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH09-LO03",
+                                                                                                             "description":  "Explore rotational patterns and recognise symmetry in geometric and real-world designs."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  10,
+                                                                                "title":  "The Other Side of Zero",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH10-LO01",
+                                                                                                             "description":  "Understand integers as numbers that include positive numbers, zero and negative numbers, and represent them on a number line."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH10-LO02",
+                                                                                                             "description":  "Compare and order integers using their positions on the number line and interpret positive and negative quantities in context."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "MAT-06-CH10-LO03",
+                                                                                                             "description":  "Use addition and subtraction of integers to solve problems involving changes, directions and quantities on either side of zero."
+                                                                                                         }
+                                                                                                     ]
+                                                                            }
+                                                                        ]
+                                                       },
+                                                       {
+                                                           "name":  "Science",
+                                                           "chapters":  [
+                                                                            {
+                                                                                "seq":  1,
+                                                                                "title":  "The Wonderful World of Science",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH01-LO01",
+                                                                                                             "description":  "Describe science as a way of observing, questioning and explaining the world."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH01-LO02",
+                                                                                                             "description":  "Identify observation, questioning, prediction and investigation as parts of scientific inquiry."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH01-LO03",
+                                                                                                             "description":  "Use simple everyday situations to frame questions and suggest ways to investigate them."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  2,
+                                                                                "title":  "Diversity in the Living World",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH02-LO01",
+                                                                                                             "description":  "Group plants using seed type, roots, venation and other observable features."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH02-LO02",
+                                                                                                             "description":  "Group animals using movement, body features and habitat."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH02-LO03",
+                                                                                                             "description":  "Explain how adaptations and biodiversity relate to different habitats and human actions."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  3,
+                                                                                "title":  "Mindful Eating: A Path to a Healthy Body",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH03-LO01",
+                                                                                                             "description":  "Identify major nutrients and relate them to their functions and food sources."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH03-LO02",
+                                                                                                             "description":  "Use simple tests for starch and fats and interpret observations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH03-LO03",
+                                                                                                             "description":  "Explain the importance of a balanced diet, vitamins, minerals, fibre and water for health."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  4,
+                                                                                "title":  "Exploring Magnets",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH04-LO01",
+                                                                                                             "description":  "Identify magnetic and non-magnetic materials and the two poles of a magnet."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH04-LO02",
+                                                                                                             "description":  "Describe attraction, repulsion and the north-south alignment of a freely suspended magnet."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH04-LO03",
+                                                                                                             "description":  "Use magnets and simple magnetic arrangements to investigate magnetic behaviour."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  5,
+                                                                                "title":  "Measurement of Length and Motion",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH05-LO01",
+                                                                                                             "description":  "Measure length using standard units and suitable measuring instruments."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH05-LO02",
+                                                                                                             "description":  "Convert between common units of length and estimate/measures dimensions."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH05-LO03",
+                                                                                                             "description":  "Describe motion relative to a reference point and distinguish linear, circular and oscillatory motion."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  6,
+                                                                                "title":  "Materials Around Us",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH06-LO01",
+                                                                                                             "description":  "Recognise matter and classify materials using observable properties."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH06-LO02",
+                                                                                                             "description":  "Classify materials as transparent, translucent or opaque and as soluble or insoluble in water."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH06-LO03",
+                                                                                                             "description":  "Select materials for objects by considering properties such as hardness, lustre, flexibility and interaction with water."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  7,
+                                                                                "title":  "Temperature and its Measurement",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH07-LO01",
+                                                                                                             "description":  "Distinguish temperature from the sensation of hotness or coldness."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH07-LO02",
+                                                                                                             "description":  "Read laboratory and clinical thermometers and identify their ranges and least counts."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH07-LO03",
+                                                                                                             "description":  "Convert between Celsius and Fahrenheit for values used in the chapter and interpret temperature observations."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  8,
+                                                                                "title":  "A Journey through States of Water",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH08-LO01",
+                                                                                                             "description":  "Describe water in solid, liquid and gaseous states and the changes between them."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH08-LO02",
+                                                                                                             "description":  "Explain evaporation, condensation and cooling in everyday situations."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH08-LO03",
+                                                                                                             "description":  "Relate the water cycle and responsible water use to observations of water in the environment."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  9,
+                                                                                "title":  "Methods of Separation in Everyday Life",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH09-LO01",
+                                                                                                             "description":  "Explain why mixtures are separated and select suitable separation methods."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH09-LO02",
+                                                                                                             "description":  "Distinguish methods such as handpicking, sieving, filtration, decantation and evaporation."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH09-LO03",
+                                                                                                             "description":  "Relate separation methods to particle size, solubility, density and practical situations."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  10,
+                                                                                "title":  "Living Creatures: Exploring their Characteristics",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH10-LO01",
+                                                                                                             "description":  "Identify essential characteristics of living beings and distinguish living from non-living objects."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH10-LO02",
+                                                                                                             "description":  "Describe plant, mosquito and frog life cycles and major stages."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH10-LO03",
+                                                                                                             "description":  "Plan simple investigations involving germination, growth, respiration or response to conditions."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  11,
+                                                                                "title":  "Nature’s Treasures",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH11-LO01",
+                                                                                                             "description":  "Identify air, water, soil, sunlight, forests and minerals as natural resources."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH11-LO02",
+                                                                                                             "description":  "Distinguish renewable and non-renewable resources and explain responsible use."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH11-LO03",
+                                                                                                             "description":  "Explain how human activities affect forests, soil, air and water and propose conservation actions."
+                                                                                                         }
+                                                                                                     ]
+                                                                            },
+                                                                            {
+                                                                                "seq":  12,
+                                                                                "title":  "Beyond Earth",
+                                                                                "learningOutcomes":  [
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH12-LO01",
+                                                                                                             "description":  "Identify the Sun, Moon, planets, stars, satellites and constellations in the Solar System context."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH12-LO02",
+                                                                                                             "description":  "Recognise patterns such as Orion, the Big Dipper, Little Dipper and the Pole Star."
+                                                                                                         },
+                                                                                                         {
+                                                                                                             "code":  "SCI-6-CH12-LO03",
+                                                                                                             "description":  "Explain simple observations of the night sky and the apparent daily motion of celestial objects."
+                                                                                                         }
+                                                                                                     ]
+                                                                            }
+                                                                        ]
+                                                       }
+                                                   ]
+                                  }
+                              ]
+              }
+}

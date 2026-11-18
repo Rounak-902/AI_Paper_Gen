@@ -1,0 +1,1 @@
+"""PaperGen Backend App package."""

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "board": {
+    "code": "CBSE",
+    "name": "Central Board of Secondary Education",
+    "curriculumVersion": {
+      "academicYear": "2025-26",
+      "label": "CBSE 2025-26 Curriculum",
+      "effectiveFrom": "2025-04-01",
+      "finalStatus": "active",
+      "supersedeActive": true
+    },
+    "classes": [
+      {
+        "name": "Class 10",
+        "subjects": [
+          {
+            "name": "Science",
+            "chapters": [
+              {
+                "seq": 1,
+                "title": "Chemical Reactions and Equations",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH01-LO01", "description": "Identify types of chemical reactions: combination, decomposition, displacement, double displacement, and redox." },
+                  { "code": "SCI-10-CH01-LO02", "description": "Write and balance chemical equations for given reactions." },
+                  { "code": "SCI-10-CH01-LO03", "description": "Explain oxidation and reduction in terms of oxygen gain/loss and electron transfer." }
+                ]
+              },
+              {
+                "seq": 2,
+                "title": "Acids, Bases and Salts",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH02-LO01", "description": "Classify substances as acids, bases, or salts using indicators and pH scale." },
+                  { "code": "SCI-10-CH02-LO02", "description": "Describe the preparation, properties, and uses of common salts: NaOH, baking soda, washing soda, bleaching powder, plaster of Paris." }
+                ]
+              },
+              {
+                "seq": 3,
+                "title": "Metals and Non-metals",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH03-LO01", "description": "Compare physical and chemical properties of metals and non-metals." },
+                  { "code": "SCI-10-CH03-LO02", "description": "Explain the reactivity series and its applications in extraction of metals." },
+                  { "code": "SCI-10-CH03-LO03", "description": "Describe the process of corrosion and methods of prevention." }
+                ]
+              },
+              {
+                "seq": 4,
+                "title": "Carbon and its Compounds",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH04-LO01", "description": "Explain covalent bonding in carbon compounds and the versatile nature of carbon." },
+                  { "code": "SCI-10-CH04-LO02", "description": "Classify hydrocarbons and describe homologous series, nomenclature, and functional groups." },
+                  { "code": "SCI-10-CH04-LO03", "description": "Describe properties and reactions of ethanol and ethanoic acid." }
+                ]
+              },
+              {
+                "seq": 5,
+                "title": "Life Processes",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH05-LO01", "description": "Explain the processes of nutrition in autotrophs and heterotrophs." },
+                  { "code": "SCI-10-CH05-LO02", "description": "Describe the mechanism of respiration, transportation, and excretion in humans and plants." }
+                ]
+              },
+              {
+                "seq": 6,
+                "title": "Control and Coordination",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH06-LO01", "description": "Differentiate between nervous and hormonal control mechanisms in animals." },
+                  { "code": "SCI-10-CH06-LO02", "description": "Describe reflex arcs, brain structure, and the role of plant hormones in coordination." }
+                ]
+              },
+              {
+                "seq": 7,
+                "title": "How do Organisms Reproduce",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH07-LO01", "description": "Distinguish between asexual and sexual reproduction and list methods of each." },
+                  { "code": "SCI-10-CH07-LO02", "description": "Describe the human reproductive system and the process of fertilisation and development." }
+                ]
+              },
+              {
+                "seq": 8,
+                "title": "Heredity",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH08-LO01", "description": "Explain Mendel's laws of inheritance using monohybrid and dihybrid crosses." },
+                  { "code": "SCI-10-CH08-LO02", "description": "Describe the mechanism of sex determination in humans and the basis of evolution." }
+                ]
+              },
+              {
+                "seq": 9,
+                "title": "Light — Reflection and Refraction",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH09-LO01", "description": "State and apply laws of reflection and refraction; use mirror and lens formulae." },
+                  { "code": "SCI-10-CH09-LO02", "description": "Draw ray diagrams for image formation by mirrors and lenses." }
+                ]
+              },
+              {
+                "seq": 10,
+                "title": "The Human Eye and the Colourful World",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH10-LO01", "description": "Explain the working of the human eye, defects of vision, and their correction." },
+                  { "code": "SCI-10-CH10-LO02", "description": "Describe dispersion, scattering of light, and atmospheric refraction phenomena." }
+                ]
+              },
+              {
+                "seq": 11,
+                "title": "Electricity",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH11-LO01", "description": "State and apply Ohm's law; calculate equivalent resistance in series and parallel." },
+                  { "code": "SCI-10-CH11-LO02", "description": "Calculate electrical energy, power consumed, and cost of electricity." }
+                ]
+              },
+              {
+                "seq": 12,
+                "title": "Magnetic Effects of Electric Current",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH12-LO01", "description": "Describe the magnetic field due to a current-carrying conductor, solenoid, and electromagnet." },
+                  { "code": "SCI-10-CH12-LO02", "description": "Explain the working principle of electric motor, generator, and electromagnetic induction." }
+                ]
+              },
+              {
+                "seq": 13,
+                "title": "Our Environment",
+                "learningOutcomes": [
+                  { "code": "SCI-10-CH13-LO01", "description": "Explain food chains, food webs, energy flow, and the 10% law." },
+                  { "code": "SCI-10-CH13-LO02", "description": "Describe ozone layer depletion, biological magnification, and waste management." }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

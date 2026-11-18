@@ -1,0 +1,1626 @@
+[
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: Why are 1, 3, 6, 10, 15, … called triangular numbers? Why are 1, 4, 9, 16, 25, … called square numbers or squares? Why are 1, 8, 27, 64, 125, … called cubes?",
+    "marks": 3,
+    "difficulty": "medium",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Patterns in Mathematics",
+    "options_json": [],
+    "answer_json": {
+      "text": "The first sequence can be represented by arranging dots in triangular arrays, the second by arranging dots in square arrays, and the third by arranging objects in cubes. Hence they are called triangular numbers, square numbers and cubes respectively."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying the triangular arrangement",
+        "1 mark for identifying the square arrangement",
+        "1 mark for identifying the cube arrangement"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "1.3",
+      "question_number": "Q2",
+      "page_number": 5
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.3: You will have noticed that 36 is both a triangular number and a square number! That is, 36 dots can be arranged perfectly both in a triangle and in a square. Make pictures in your notebook illustrating this!",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Patterns in Mathematics",
+    "options_json": [],
+    "answer_json": {
+      "text": "36 is a square number because it can be arranged as a 6 × 6 square. It is also a triangular number because 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for the 6 × 6 square arrangement",
+        "1 mark for a correct triangular-number representation of 36"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "1.3",
+      "question_number": "Q3",
+      "page_number": 5
+    }
+  },
+  {
+    "qtype": "numerical",
+    "stem": "By imagining a large version of your picture, or by drawing it partially, as needed, can you see what will be the value of 1 + 2 + 3 + ... + 99 + 100 + 99 + ... + 3 + 2 + 1?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Patterns in Mathematics",
+    "options_json": [],
+    "answer_json": {
+      "value": 10000,
+      "units": "units",
+      "tolerance": 0.0,
+      "solution": [
+        "Step 1: The sum is 100 + 100 + 100 + ... in the corresponding square-number arrangement.",
+        "Step 2: The resulting arrangement is a 100 × 100 square.",
+        "Step 3: Therefore the value is 100 × 100 = 10,000."
+      ]
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for recognising the square-number arrangement",
+        "1 mark for final value 10,000"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "1.4",
+      "question_number": "Q2",
+      "page_number": 15
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it out Q.7: What happens when you multiply the triangular numbers by 6 and add 1? Which sequence do you get? Can you explain it with a picture?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Patterns in Mathematics",
+    "options_json": [],
+    "answer_json": {
+      "text": "For triangular numbers 1, 3, 6, 10, 15, multiplying by 6 and adding 1 gives 7, 19, 37, 61, 91, …."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for obtaining the sequence 7, 19, 37, 61, 91, …",
+        "1 mark for explaining the operation on triangular numbers"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "1.4",
+      "question_number": "Q7",
+      "page_number": 16
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it out Q.5: To get from one shape to the next shape in the Koch Snowflake sequence, one replaces each line segment ‘—’ by a ‘speed bump’. As one does this more and more times, the changes become tinier and tinier with very very small line segments. How many total line segments are there in each shape of the Koch Snowflake? What is the corresponding number sequence?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Patterns in Mathematics",
+    "options_json": [],
+    "answer_json": {
+      "text": "The total line segments are 3, 12, 48, 192, 768, … . The corresponding sequence is 3, 3 × 4, 3 × 4 × 4, 3 × 4 × 4 × 4, 3 × 4 × 4 × 4 × 4, … ."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for the line-segment sequence 3, 12, 48, 192, 768",
+        "1 mark for identifying the multiplication-by-4 pattern"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "1.6",
+      "question_number": "Q5",
+      "page_number": 17
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.6: Here is a ray OA (Fig. 2.7). It starts at O and passes through the point A. It also passes through another point B. How many names can you give for this ray?",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "remember",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Lines and Angles",
+    "options_json": [],
+    "answer_json": {
+      "text": "The ray can be named as ray OA or ray OB because O is the starting point and A and B lie on the same ray."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "2.2",
+      "question_number": "Q6",
+      "page_number": 44
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Let’s Explore: In this figure, ∠TER = 80°. What is the measure of ∠BET? What is the measure of ∠SET?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Lines and Angles",
+    "options_json": [],
+    "answer_json": {
+      "text": "∠BET = 100°, ∠SET = 10°\nStep 1: From the figure and the given relation, ∠BET is supplementary to ∠TER, so ∠BET = 180° − 80° = 100°.\nStep 2: The figure gives ∠SET = 10°."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for ∠BET = 100°",
+        "1 mark for ∠SET = 10°"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "2.7",
+      "page_number": 52
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.6: The Ashoka Chakra has 24 spokes. What is the degree measure of the angle between two spokes next to each other? What is the largest acute angle formed between two spokes?",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Lines and Angles",
+    "options_json": [],
+    "answer_json": {
+      "text": "15°; largest acute angle = 75°\nStep 1: A full turn is 360° and there are 24 equal angles.\nStep 2: Angle between adjacent spokes = 360° ÷ 24 = 15°.\nStep 3: The largest acute angle is 5 × 15° = 75°."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for 15° between adjacent spokes",
+        "1 mark for largest acute angle 75°"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "2.7",
+      "question_number": "Q6",
+      "page_number": 53
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.7: Puzzle: I am an acute angle. If you double my measure, you get an acute angle. If you triple my measure, you will get an acute angle again. If you quadruple (four times) my measure, you will get an acute angle yet again! But if you multiply my measure by 5, you will get an obtuse angle measure. What are the possibilities for my measure?",
+    "marks": 2,
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Lines and Angles",
+    "options_json": [],
+    "answer_json": {
+      "text": "The possibilities given in the textbook are 19°, 20°, 21° and 22°."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for restricting the angle to values satisfying the first four conditions",
+        "1 mark for listing 19°, 20°, 21° and 22°"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "2.7",
+      "question_number": "Q7",
+      "page_number": 53
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: In each case, determine which angle is greater and why.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Lines and Angles",
+    "options_json": [],
+    "answer_json": {
+      "text": "The greater angle in each case is determined by comparing the opening between its two arms, not by the lengths of the arms. The textbook asks the learner to justify each comparison from the corresponding figures."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for comparing the angular opening correctly",
+        "1 mark for giving a reason based on angle size rather than arm length"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "2.4",
+      "question_number": "Q2",
+      "page_number": 47
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.6: Is the sequence 0, 1, 2, 1, 0 possible? Why or why not?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Number Play",
+    "options_json": [],
+    "answer_json": {
+      "text": "No. The sequence is not possible under the arrangement rules shown in the chapter; the values assigned to adjacent children cannot produce this sequence."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for stating that the sequence is not possible",
+        "1 mark for giving the rule-based reason"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "3.2",
+      "question_number": "Q6",
+      "page_number": 21
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.10: Make other variations of this puzzle and challenge your classmates.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "create",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Number Play",
+    "options_json": [],
+    "answer_json": {
+      "text": "This is an open-ended construction task. A valid answer is any new supercell-table variation that follows the chapter's rules and can be solved by classmates."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for creating a valid variation",
+        "1 mark for ensuring the variation follows the supercell rules"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "3.3",
+      "question_number": "Q10",
+      "page_number": 23
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.6: Write one 5-digit number and two 3-digit numbers such that their sum is 18,670.",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Number Play",
+    "options_json": [],
+    "answer_json": {
+      "text": "18,000 + 300 + 370 = 18,670\nStep 1: Choose 18,000 as the 5-digit number.\nStep 2: Choose 300 and 370 as the two 3-digit numbers.\nStep 3: Add: 18,000 + 300 + 370 = 18,670."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for three numbers satisfying the place-value requirements",
+        "1 mark for their sum being 18,670"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "3.12",
+      "question_number": "Q6",
+      "page_number": 31
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.9: Check if the Collatz Conjecture holds for the starting number 100.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Number Play",
+    "options_json": [],
+    "answer_json": {
+      "text": "The sequence reaches 1.\nStep 1: Starting with 100, repeatedly divide by 2 when the number is even and replace an odd number n by 3n + 1.\nStep 2: The sequence is 100, 50, 25, 76, 38, 19, 58, 29, 88, 44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1.\nStep 3: The sequence reaches 1, so the conjecture holds for this starting number."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for a correct sequence leading from 100 to 1",
+        "1 mark for the conclusion"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "3.12",
+      "question_number": "Q9",
+      "page_number": 32
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.4: How many rounds does the number 5683 take to reach the Kaprekar constant?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Number Play",
+    "options_json": [],
+    "answer_json": {
+      "text": "7 rounds\nStep 1: Arrange 5683 in descending and ascending order and subtract: 8653 − 3568 = 5085.\nStep 2: Repeat: 8550 − 0558 = 7992.\nStep 3: 9972 − 2799 = 7173.\nStep 4: 7731 − 1377 = 6354.\nStep 5: 6543 − 3456 = 3087.\nStep 6: 8730 − 0378 = 8352.\nStep 7: 8532 − 2358 = 6174."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for applying the Kaprekar process correctly",
+        "1 mark for the correct number of rounds"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "3.7",
+      "question_number": "Q4",
+      "page_number": 28
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.1: What would you do to find the most popular game among Naresh’s and Navya’s classmates?",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Data Handling and Presentation",
+    "options_json": [],
+    "answer_json": {
+      "text": "Arrange and organise the given data in a table so that the frequency of each game can be compared."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "4.1",
+      "question_number": "Q1",
+      "page_number": 75
+    }
+  },
+  {
+    "qtype": "one_word",
+    "stem": "Figure it Out Q.2: What is the most popular game in their class?",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "remember",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Data Handling and Presentation",
+    "options_json": [],
+    "answer_json": {
+      "solution": "Hockey (frequency 8).",
+      "value": "Hockey"
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "4.1",
+      "question_number": "Q2",
+      "page_number": 75
+    }
+  },
+  {
+    "qtype": "match",
+    "stem": "Figure it Out Q.4: Pari wants to respond to the questions given below. Put a tick (α) for the questions where she needs to carry out data collection and put a cross (⨉) for the questions where she doesn’t need to collect data. a. What is the most popular TV show among her classmates? b. When did India get independence? c. How much water is getting wasted in her locality? d. What is the capital of India?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Data Handling and Presentation",
+    "options_json": {
+      "column_a": [
+        "a. Most popular TV show among classmates",
+        "b. When did India get independence?",
+        "c. Water wasted in her locality",
+        "d. Capital of India"
+      ],
+      "column_b": [
+        "Needs data collection (α)",
+        "Does not need data collection (⨉)"
+      ]
+    },
+    "answer_json": {
+      "pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for correctly identifying the two questions requiring data collection",
+        "1 mark for correctly identifying the two questions not requiring data collection"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "4.1",
+      "question_number": "Q4",
+      "page_number": 75
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: Is the above table sufficient to distribute each type of sweet to the correct student? Explain. If it is not sufficient, what is the alternative?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Data Handling and Presentation",
+    "options_json": [],
+    "answer_json": {
+      "text": "No. The table shows only the number of students who chose each sweet, not which sweet was chosen by a particular student. An alternative is to categorise students according to their choice of sweet."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for explaining why the frequency table is insufficient",
+        "1 mark for giving the alternative of categorising students by sweet choice"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "4.1",
+      "question_number": "Q2",
+      "page_number": 76
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: How did arranging the data in ascending order help to answer these questions?",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Data Handling and Presentation",
+    "options_json": [],
+    "answer_json": {
+      "text": "Ordered data makes the frequency of any data easier to count and makes the given information easier to use."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "4.1",
+      "question_number": "Q2",
+      "page_number": 77
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Example: Is 168 divisible by 12? Find the prime factorisations of both.",
+    "marks": 3,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "text": "Yes, 168 is divisible by 12.\nStep 1: 168 = 2 × 2 × 2 × 3 × 7.\nStep 2: 12 = 2 × 2 × 3.\nStep 3: The prime factorisation of 12 is contained in that of 168, so 168 = 12 × 14.\nStep 4: Therefore 168 is divisible by 12."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for prime factorisation of 168",
+        "1 mark for prime factorisation of 12 and comparison",
+        "1 mark for the divisibility conclusion"
+      ]
+    },
+    "meta_json": {
+      "content_type": "solved_example",
+      "example_number": "Example",
+      "section": "Using prime factorisation to check if one number is divisible by another",
+      "page_number": 121
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Example: Is 75 divisible by 21? Find the prime factorisations of both.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "text": "No, 75 is not divisible by 21.\nStep 1: 75 = 3 × 5 × 5.\nStep 2: 21 = 3 × 7.\nStep 3: 7 is a prime factor of 21 but not of 75.\nStep 4: Therefore 75 is not divisible by 21."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for both prime factorisations",
+        "1 mark for the correct conclusion"
+      ]
+    },
+    "meta_json": {
+      "content_type": "solved_example",
+      "example_number": "Example",
+      "section": "Using prime factorisation to check if one number is divisible by another",
+      "page_number": 121
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.8: Twin primes are pairs of primes having a difference of 2. For example, 3 and 5 are twin primes. So are 17 and 19. Find the other twin primes between 1 and 100.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "text": "The twin-prime pairs between 1 and 100 are 3 and 5, 5 and 7, 11 and 13, 17 and 19, 29 and 31, 41 and 43, 59 and 61, 71 and 73."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying the twin-prime condition",
+        "1 mark for listing the pairs correctly"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q8",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "true_false",
+    "stem": "Figure it Out Q.9a: Identify whether the statement is true or false. Explain. There is no prime number whose units digit is 4.",
+    "marks": 1,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "value": true,
+      "explanation": "A number ending in 4 is even, and 2 is the only even prime number."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q9a",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "true_false",
+    "stem": "Figure it Out Q.9b: Identify whether the statement is true or false. Explain. A product of primes can also be prime.",
+    "marks": 1,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "value": false,
+      "explanation": "A product of primes is composite."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q9b",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "true_false",
+    "stem": "Figure it Out Q.9c: Identify whether the statement is true or false. Explain. Prime numbers do not have any factors.",
+    "marks": 1,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "value": false,
+      "explanation": "A prime number has exactly two factors: 1 and itself."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q9c",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "true_false",
+    "stem": "Figure it Out Q.9d: Identify whether the statement is true or false. Explain. All even numbers are composite numbers.",
+    "marks": 1,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "value": false,
+      "explanation": "2 is an even prime number; all other even numbers are composite."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q9d",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "true_false",
+    "stem": "Figure it Out Q.9e: Identify whether the statement is true or false. Explain. 2 is a prime and so is the next number, 3. For every other prime, the next number is composite.",
+    "marks": 1,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "value": true,
+      "explanation": "Every prime other than 2 is odd, so the next number is even and composite."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q9e",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.10: Which of the following numbers is the product of exactly three distinct prime numbers: 45, 60, 91, 105, 330?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Prime Time",
+    "options_json": [],
+    "answer_json": {
+      "text": "105 is the required number because 105 = 3 × 5 × 7, a product of three distinct prime numbers."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying 105",
+        "1 mark for showing 105 = 3 × 5 × 7"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "5.3",
+      "question_number": "Q10",
+      "page_number": 27
+    }
+  },
+  {
+    "qtype": "numerical",
+    "stem": "Example: A floor is 5 m long and 4 m wide. A square carpet of sides 3 m is laid on the floor. Find the area of the floor that is not carpeted.",
+    "marks": 3,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Perimeter and Area",
+    "options_json": [],
+    "answer_json": {
+      "value": 11,
+      "units": "sq m",
+      "tolerance": 0.0,
+      "solution": "Area of floor = 20 sq m; Area of carpet = 9 sq m; Remaining = 11 sq m."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for area of floor = 20 m²",
+        "1 mark for area of carpet = 9 m²",
+        "1 mark for remaining area = 11 m²"
+      ]
+    },
+    "meta_json": {
+      "content_type": "solved_example",
+      "example_number": "Example",
+      "section": "6.2",
+      "page_number": 137
+    }
+  },
+  {
+    "qtype": "numerical",
+    "stem": "Figure it Out Q.1: The area of a rectangular garden 25 m long is 300 sq m. What is the width of the garden?",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Perimeter and Area",
+    "options_json": [],
+    "answer_json": {
+      "value": 12,
+      "units": "m",
+      "tolerance": 0.0,
+      "solution": "Width = Area / Length = 300 / 25 = 12 m."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for using width = area ÷ length",
+        "1 mark for 12 m"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "6.2",
+      "question_number": "Q1",
+      "page_number": 138
+    }
+  },
+  {
+    "qtype": "numerical",
+    "stem": "Figure it Out Q.2: What is the cost of tiling a rectangular plot of land 500 m long and 200 m wide at the rate of Rs.8 per hundred sq. m?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Perimeter and Area",
+    "options_json": [],
+    "answer_json": {
+      "value": 8000,
+      "units": "Rs",
+      "tolerance": 0.0,
+      "solution": "Area = 500 * 200 = 100,000 sq m. Cost = (100,000 / 100) * 8 = Rs. 8,000."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for calculating area = 100,000 m²",
+        "1 mark for cost = Rs. 8,000"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "6.2",
+      "question_number": "Q2",
+      "page_number": 138
+    }
+  },
+  {
+    "qtype": "numerical",
+    "stem": "Figure it Out Q.3: A rectangular coconut grove is 100 m long and 50 m wide. If each coconut tree requires 25 sq m, what is the maximum number of trees that can be planted in this grove?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Perimeter and Area",
+    "options_json": [],
+    "answer_json": {
+      "value": 200,
+      "units": "trees",
+      "tolerance": 0.0,
+      "solution": "Area = 100 * 50 = 5,000 sq m. Trees = 5,000 / 25 = 200 trees."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for total area = 5,000 m²",
+        "1 mark for 200 trees"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "6.2",
+      "question_number": "Q3",
+      "page_number": 138
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out: Find various objects from your surroundings that have regular shapes and find their perimeters. Also, generalise your understanding for the perimeter of other regular polygons.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Perimeter and Area",
+    "options_json": [],
+    "answer_json": {
+      "text": "For a regular polygon, perimeter = number of sides × length of one side."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying regular-shaped objects as examples",
+        "1 mark for the general rule: perimeter = number of sides × side length"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "6.1",
+      "page_number": 135
+    }
+  },
+  {
+    "qtype": "fill_blank",
+    "stem": "Figure it Out Q.1: Three guavas together weigh 1 kg. If they are roughly of the same size, each guava will roughly weigh ___ kg.",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Fractions",
+    "options_json": [],
+    "answer_json": {
+      "blanks": [
+        "1/3"
+      ]
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "7.1",
+      "question_number": "Q1",
+      "page_number": 152
+    }
+  },
+  {
+    "qtype": "fill_blank",
+    "stem": "Figure it Out Q.2: A wholesale merchant packed 1 kg of rice in four packets of equal weight. The weight of each packet is ___ kg.",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Fractions",
+    "options_json": [],
+    "answer_json": {
+      "blanks": [
+        "1/4"
+      ]
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "7.1",
+      "question_number": "Q2",
+      "page_number": 152
+    }
+  },
+  {
+    "qtype": "fill_blank",
+    "stem": "Figure it Out Q.3: Four friends ordered 3 glasses of sugarcane juice and shared it equally among themselves. Each one drank ___ glass of sugarcane juice.",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Fractions",
+    "options_json": [],
+    "answer_json": {
+      "blanks": [
+        "3/4"
+      ]
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "7.1",
+      "question_number": "Q3",
+      "page_number": 152
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Example: Is the fraction $\\frac{16}{20}$ in lowest terms? No, 4 is a common factor of 16 and 20. Reduce $\\frac{16}{20}$ to lowest terms.",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Fractions",
+    "options_json": [],
+    "answer_json": {
+      "text": "$\\frac{16}{20}=\\frac{4}{5}$\nStep 1: Divide numerator and denominator by their common factor 4.\nStep 2: 16 ÷ 4 = 4 and 20 ÷ 4 = 5.\nStep 3: 4 and 5 have no common factor other than 1."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for dividing numerator and denominator by 4",
+        "1 mark for final simplest form 4/5"
+      ]
+    },
+    "meta_json": {
+      "content_type": "solved_example",
+      "example_number": "Example",
+      "section": "Expressing a fraction in lowest terms (or in its simplest form)",
+      "page_number": 172
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it out Q.2: Rahim mixes $\\frac{2}{3}$ litres of yellow paint with $\\frac{3}{4}$ litres of blue paint to make green paint. What is the volume of green paint he has made?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Fractions",
+    "options_json": [],
+    "answer_json": {
+      "text": "$1\\frac{5}{12}$ litres\nStep 1: Add the two fractions: 2/3 + 3/4.\nStep 2: Use denominator 12: 8/12 + 9/12 = 17/12.\nStep 3: Convert to a mixed number: 17/12 = 1 5/12."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for 2/3 + 3/4 = 17/12",
+        "1 mark for converting to 1 5/12 litres"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "7.7",
+      "question_number": "Q2",
+      "page_number": 180
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.1: What radius should be taken in the compass to get this half circle? What should be the length of AX?",
+    "marks": 2,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Playing with Constructions",
+    "options_json": [],
+    "answer_json": {
+      "text": "Radius = 2 cm; AX = 4 cm\nStep 1: The required compass radius is 2 cm.\nStep 2: AX is the diameter of the semicircle, so AX = 2 × 2 cm = 4 cm."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for radius 2 cm",
+        "1 mark for AX = 4 cm"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "8.1",
+      "question_number": "Q1",
+      "page_number": 192
+    }
+  },
+  {
+    "qtype": "mcq",
+    "stem": "Which of the following is not a name for this square? 1. PQSR 2. SPQR 3. RSPQ 4. QRSP",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "remember",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Playing with Constructions",
+    "options_json": [
+      {
+        "text": "PQSR",
+        "is_correct": true
+      },
+      {
+        "text": "SPQR",
+        "is_correct": false
+      },
+      {
+        "text": "RSPQ",
+        "is_correct": false
+      },
+      {
+        "text": "QRSP",
+        "is_correct": false
+      }
+    ],
+    "answer_json": {
+      "index": 0,
+      "explanation": "PQSR is not a valid name for the square because the vertices are not taken in consecutive order around the square."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "8.2",
+      "page_number": 193
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.3: Is it possible to construct a 4-sided figure in which all the angles are equal to 90º but opposite sides are not equal?",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Playing with Constructions",
+    "options_json": [],
+    "answer_json": {
+      "text": "No. A 4-sided figure with all angles equal to 90° is a rectangle, and its opposite sides are equal."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "8.3",
+      "question_number": "Q3",
+      "page_number": 197
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out: In each of these cases, observe i. how the length XY compares to that of AB and ii. the shape of the 4-sided figure ABYX.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Playing with Constructions",
+    "options_json": [],
+    "answer_json": {
+      "text": "i. XY = AB. ii. ABYX is a rectangle."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for XY = AB",
+        "1 mark for identifying ABYX as a rectangle"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "8.4",
+      "page_number": 199
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.3: Is there a 4-sided figure in which all the sides are equal in length but is not a square? If such a figure exists, can you construct it?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Playing with Constructions",
+    "options_json": [],
+    "answer_json": {
+      "text": "Yes. A rhombus can have all four sides equal without being a square. Such a figure can be constructed by choosing equal side lengths but angles other than 90°."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying that such a quadrilateral exists",
+        "1 mark for identifying/constructing a rhombus that is not a square"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "8.5",
+      "question_number": "Q3",
+      "page_number": 217
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Example: Find the angles of symmetry of the following strip.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Symmetry",
+    "options_json": [],
+    "answer_json": {
+      "text": "A rotation of 180° does not make the strip overlap with the original. Another 180° rotation is needed to return to the original, so the figure comes back only after a complete 360° rotation. Therefore it does not have rotational symmetry."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for explaining the 180° rotation does not overlap",
+        "1 mark for concluding that only 360° returns the strip to its original position"
+      ]
+    },
+    "meta_json": {
+      "content_type": "solved_example",
+      "example_number": "Example",
+      "section": "Rotational Symmetry",
+      "page_number": 231
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q1: Do you see any line of symmetry in the figures at the start of the chapter? What are they?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "understand",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Symmetry",
+    "options_json": [],
+    "answer_json": {
+      "text": "The figures at the start of the chapter are to be inspected for mirror symmetry. A line of symmetry is a line along which the figure can be folded so that the two halves overlap exactly."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying the relevant line(s) of symmetry from the figures",
+        "1 mark for explaining the overlap criterion"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "9.2",
+      "question_number": "Q1",
+      "page_number": 226
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: For each of the following figures, identify the line(s) of symmetry if it exists.",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Symmetry",
+    "options_json": [],
+    "answer_json": {
+      "text": "For each figure, a line of symmetry exists when reflection across that line maps the figure onto itself. The exact lines are determined from the corresponding figures in the textbook."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for correctly identifying existing symmetry lines",
+        "1 mark for identifying figures without such a line"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "9.2",
+      "question_number": "Q2",
+      "page_number": 226
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.4: In a figure, 60° is the smallest angle of symmetry. What are the other angles of symmetry?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Symmetry",
+    "options_json": [],
+    "answer_json": {
+      "text": "120°, 180°, 240° and 300°\nStep 1: Starting from the smallest angle 60°, successive symmetry rotations are multiples of 60°.\nStep 2: The other angles less than 360° are 120°, 180°, 240° and 300°."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for recognising multiples of 60°",
+        "1 mark for listing 120°, 180°, 240° and 300°"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "9.5",
+      "question_number": "Q4",
+      "page_number": 239
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.11: How many lines of symmetry and angles of symmetry does Ashoka Chakra have?",
+    "marks": 2,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "Symmetry",
+    "options_json": [],
+    "answer_json": {
+      "text": "The Ashoka Chakra has 24-fold rotational symmetry, so it has 24 lines of symmetry and 24 angles of symmetry in the sense used in the chapter."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for the number of lines of symmetry",
+        "1 mark for the number of angles of symmetry"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "9.5",
+      "question_number": "Q11",
+      "page_number": 240
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.1: Write all the integers between the given pairs, in increasing order. a. 0 and –7 b. –4 and 4 c. –8 and –15 d. –30 and –23",
+    "marks": 3,
+    "difficulty": "medium",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "The Other Side of Zero",
+    "options_json": [],
+    "answer_json": {
+      "text": "a. −6,−5,−4,−3,−2,−1; b. −3,−2,−1,0,1,2,3; c. −14,−13,−12,−11,−10,−9; d. −29,−28,−27,−26,−25,−24\nStep 1: Between 0 and −7: −6, −5, −4, −3, −2, −1.\nStep 2: Between −4 and 4: −3, −2, −1, 0, 1, 2, 3.\nStep 3: Between −8 and −15: −14, −13, −12, −11, −10, −9.\nStep 4: Between −30 and −23: −29, −28, −27, −26, −25, −24."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for correct increasing sequence in a and b",
+        "1 mark for correct increasing sequence in c",
+        "1 mark for correct increasing sequence in d"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "Figure it Out",
+      "question_number": "Q1",
+      "page_number": 265
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.2: Give three numbers such that their sum is –8.",
+    "marks": 1,
+    "difficulty": "easy",
+    "bloom": "apply",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "The Other Side of Zero",
+    "options_json": [],
+    "answer_json": {
+      "text": "One valid combination given in the textbook is −5, 7, −10 because −5 + 7 − 10 = −8."
+    },
+    "rubric_json": null,
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "Figure it Out",
+      "question_number": "Q2",
+      "page_number": 265
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.3: There are two dice whose faces have these numbers: –1, 2, –3, 4, –5, 6. The smallest possible sum upon rolling these dice is –10 = (–5) + (–5) and the largest possible sum is 12 = (6) + (6). Some numbers between (–10) and (+12) are not possible to get by adding numbers on these two dice. Find those numbers.",
+    "marks": 2,
+    "difficulty": "hard",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "The Other Side of Zero",
+    "options_json": [],
+    "answer_json": {
+      "text": "The numbers that cannot be obtained are −9, −7, −5, 0, 2, 7, 9 and 11."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for identifying the possible-sum range",
+        "1 mark for listing all eight impossible sums"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "Figure it Out",
+      "question_number": "Q3",
+      "page_number": 265
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.6: Complete the following sequences: a. (–40), (–34), (–28), (–22), _____, ______, ______ b. 3, 4, 2, 5, 1, 6, 0, 7, _____, _____, _____ c. _____, ______, 12, 6, 1, (–3), (–6), _____, ______, ______",
+    "marks": 3,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "The Other Side of Zero",
+    "options_json": [],
+    "answer_json": {
+      "text": "a. −16, −10, −4. b. −1, 8, −2. c. 27, 19, …, −8, −9, −9, following the patterns given in the textbook."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for completing sequence a",
+        "1 mark for completing sequence b",
+        "1 mark for completing sequence c"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "Figure it Out",
+      "question_number": "Q6",
+      "page_number": 265
+    }
+  },
+  {
+    "qtype": "short_answer",
+    "stem": "Figure it Out Q.8: The sum of two positive integers is always positive but a (positive integer) – (positive integer) can be positive or negative. What about a. (positive) – (negative) b. (positive) + (negative) c. (negative) + (negative) d. (negative) – (negative) e. (negative) – (positive) f. (negative) + (positive)",
+    "marks": 3,
+    "difficulty": "medium",
+    "bloom": "analyze",
+    "language": "en",
+    "source": "textbook",
+    "scope": "org",
+    "board_code": "CBSE",
+    "class_name": "Grade 6",
+    "subject_name": "Mathematics",
+    "chapter_name": "The Other Side of Zero",
+    "options_json": [],
+    "answer_json": {
+      "text": "a. positive; b. can be positive or negative; c. negative; d. can be positive or negative; e. negative; f. can be positive or negative."
+    },
+    "rubric_json": {
+      "key_points": [
+        "1 mark for correctly classifying a–c",
+        "1 mark for correctly classifying d–f",
+        "1 mark for recognising when the sign depends on magnitudes"
+      ]
+    },
+    "meta_json": {
+      "content_type": "textbook_exercise",
+      "section": "Figure it Out",
+      "question_number": "Q8",
+      "page_number": 266
+    }
+  }
+]

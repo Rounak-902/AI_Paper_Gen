@@ -1,0 +1,143 @@
+name: ${COMPOSE_PROJECT_NAME:-papergen-local}
+
+services:
+  postgres:
+    image: postgres:16.15-bookworm
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in infra/.env}
+      POSTGRES_DB: papergen
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256
+      PAPERGEN_APP_DB_PASSWORD: ${PAPERGEN_APP_DB_PASSWORD:?Set PAPERGEN_APP_DB_PASSWORD in infra/.env}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - papergen-postgres-data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          PGPASSWORD="$${POSTGRES_PASSWORD}"
+          psql -h 127.0.0.1 -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+          -v ON_ERROR_STOP=1 -Atqc 'SELECT 1' | grep -qx 1
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
+  postgres-provision:
+    image: postgres:16.15-bookworm
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in infra/.env}
+      POSTGRES_USER: postgres
+      POSTGRES_DB: papergen
+      PAPERGEN_APP_DB_PASSWORD: ${PAPERGEN_APP_DB_PASSWORD:?Set PAPERGEN_APP_DB_PASSWORD in infra/.env}
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d:ro
+    entrypoint:
+      - /bin/sh
+      - /docker-entrypoint-initdb.d/02-provision-app-user.sh
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: "no"
+
+  pgbouncer:
+    image: edoburu/pgbouncer:v1.25.2-p0
+    environment:
+      DATABASE_URLS: postgres://app_user:${PAPERGEN_APP_DB_PASSWORD:?Set PAPERGEN_APP_DB_PASSWORD in infra/.env}@postgres:5432/papergen,postgres://app_user:${PAPERGEN_APP_DB_PASSWORD:?Set PAPERGEN_APP_DB_PASSWORD in infra/.env}@postgres:5432/papergen_test
+      AUTH_TYPE: scram-sha-256
+      POOL_MODE: transaction
+      # Normal local-development capacity. The P1-T10 verifier's optional
+      # single-backend profile is isolated in docker-compose.p1-t10-verify.yml.
+      DEFAULT_POOL_SIZE: "20"
+      SERVER_RESET_QUERY_ALWAYS: "0"
+      MAX_PREPARED_STATEMENTS: "100"
+      IGNORE_STARTUP_PARAMETERS: extra_float_digits
+      STATS_USERS: app_user
+    ports:
+      - "127.0.0.1:${PGBOUNCER_PORT:-6432}:5432"
+    depends_on:
+      postgres-provision:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          PGPASSWORD='${PAPERGEN_APP_DB_PASSWORD}'
+          psql -h 127.0.0.1 -p 5432 -U app_user -d papergen
+          -v ON_ERROR_STOP=1 -Atqc 'SELECT 1' | grep -qx 1
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.4-alpine
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Set REDIS_PASSWORD in infra/.env}
+    command:
+      - sh
+      - -ec
+      - exec redis-server --requirepass "$${REDIS_PASSWORD}" --appendonly yes
+    ports:
+      - "127.0.0.1:${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - REDISCLI_AUTH="$${REDIS_PASSWORD}" redis-cli --no-auth-warning ping | grep -qx PONG
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 5s
+    restart: unless-stopped
+
+  minio:
+    # Local development only. This is the final prebuilt community image; non-local
+    # environments must use managed S3-compatible storage and scoped IAM credentials.
+    image: quay.io/minio/minio:RELEASE.2025-09-07T16-13-09Z
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Set MINIO_ROOT_USER in infra/.env}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Set MINIO_ROOT_PASSWORD in infra/.env}
+    command: server /data --console-address :9001
+    ports:
+      - "127.0.0.1:${MINIO_API_PORT:-9000}:9000"
+      - "127.0.0.1:${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
+  mailpit:
+    image: axllent/mailpit:v1.31.0
+    environment:
+      MP_DISABLE_VERSION_CHECK: "true"
+      MP_BLOCK_REMOTE_CSS_AND_FONTS: "true"
+      MP_MAX_MESSAGES: "500"
+    ports:
+      - "127.0.0.1:${MAILPIT_SMTP_PORT:-1025}:1025"
+      - "127.0.0.1:${MAILPIT_HTTP_PORT:-8025}:8025"
+    healthcheck:
+      test: ["CMD", "/mailpit", "readyz"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 5s
+    restart: unless-stopped
+
+volumes:
+  papergen-postgres-data:
+  redis_data:
+  minio_data:

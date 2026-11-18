@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "board": {
+    "code": "DEMO_PLACEHOLDER_BOARD",
+    "name": "[DEMO ONLY] Placeholder Curriculum Board",
+    "curriculumVersion": {
+      "academicYear": "2099-DEMO",
+      "label": "[DEMO ONLY] Import-format example",
+      "effectiveFrom": "2099-01-01",
+      "sourceRef": "demo://placeholder/not-real-curriculum",
+      "finalStatus": "draft"
+    },
+    "classes": [
+      {
+        "name": "[DEMO] Class Alpha",
+        "subjects": [
+          {
+            "name": "[DEMO] Subject One",
+            "chapters": [
+              {
+                "seq": 1,
+                "title": "[DEMO] Placeholder Chapter One",
+                "learningOutcomes": [
+                  {
+                    "code": "DEMO.S1.C1.LO1",
+                    "description": "[DEMO] Demonstrate the first placeholder outcome."
+                  },
+                  {
+                    "code": "DEMO.S1.C1.LO2",
+                    "description": "[DEMO] Demonstrate the second placeholder outcome."
+                  }
+                ]
+              },
+              {
+                "seq": 2,
+                "title": "[DEMO] Placeholder Chapter Two",
+                "learningOutcomes": [
+                  {
+                    "code": "DEMO.S1.C2.LO1",
+                    "description": "[DEMO] Demonstrate another placeholder outcome."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "[DEMO] Subject Two",
+            "chapters": [
+              {
+                "seq": 1,
+                "title": "[DEMO] Placeholder Chapter Three",
+                "learningOutcomes": [
+                  {
+                    "code": "DEMO.S2.C1.LO1",
+                    "description": "[DEMO] Demonstrate an outcome in the second subject."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "incremental": false,
+    "isolatedModules": false,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noEmit": false,
+    "outDir": ".next/test-unit",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/api/api-types.ts",
+    "src/features/auth/session.ts",
+    "src/features/auth/session.test.ts",
+    "src/features/paper-builder/document.ts",
+    "src/features/paper-builder/store.ts",
+    "src/features/paper-builder/types.ts",
+    "src/features/paper-builder/**/*.test.ts",
+    "src/features/exports/policy.ts",
+    "src/features/exports/**/*.test.ts",
+    "src/features/approvals/policy.ts",
+    "src/features/approvals/types.ts",
+    "src/features/approvals/**/*.test.ts",
+    "src/features/notifications/types.ts",
+    "src/features/notifications/presentation.ts",
+    "src/features/notifications/**/*.test.ts"
+  ]
+}

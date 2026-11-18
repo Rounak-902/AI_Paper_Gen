@@ -1,0 +1,9 @@
+# Verification-only PgBouncer profile. This file is never loaded by the normal
+# local-development Compose command; verify-p1-t10.ps1 loads it only when the
+# explicit single-backend profile is requested.
+services:
+  pgbouncer:
+    environment:
+      DEFAULT_POOL_SIZE: "1"
+      RESERVE_POOL_SIZE: "0"
+      MAX_DB_CONNECTIONS: "1"

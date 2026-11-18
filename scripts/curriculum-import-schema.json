@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://papergen.local/schemas/curriculum-import-schema.json",
+  "title": "PaperGen curriculum bulk import",
+  "description": "One board and one target curriculum-version context with nested classes, subjects, chapters, and learning outcomes. Parent UUIDs are deliberately absent; the loader resolves them through the authenticated API.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "board"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "description": "Version of this import-file contract, not a curriculum version."
+    },
+    "board": {
+      "$ref": "#/$defs/board"
+    }
+  },
+  "$defs": {
+    "nonBlank64": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": ".*\\S.*"
+    },
+    "nonBlank100": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": ".*\\S.*"
+    },
+    "nonBlank200": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "pattern": ".*\\S.*"
+    },
+    "board": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "name",
+        "curriculumVersion",
+        "classes"
+      ],
+      "properties": {
+        "code": {
+          "$ref": "#/$defs/nonBlank64",
+          "description": "Persisted board natural key. Matching is exact and case-sensitive."
+        },
+        "name": {
+          "$ref": "#/$defs/nonBlank200"
+        },
+        "curriculumVersion": {
+          "$ref": "#/$defs/curriculumVersion"
+        },
+        "classes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/class"
+          }
+        }
+      }
+    },
+    "curriculumVersion": {
+      "description": "Either target an existing version by UUID or create/match one by the board-scoped academic-year natural key. New versions are created as draft, descendants are loaded, and finalStatus is applied last through PATCH.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/curriculumVersionById"
+        },
+        {
+          "$ref": "#/$defs/curriculumVersionByNaturalKey"
+        }
+      ]
+    },
+    "curriculumVersionById": {
+      "title": "Existing curriculum version",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Existing curriculum_versions.id. It must belong to the nested board."
+        },
+        "finalStatus": {
+          "$ref": "#/$defs/curriculumVersionStatus"
+        },
+        "supersedeActive": {
+          "type": "boolean",
+          "default": false,
+          "description": "When finalStatus requires activation and another version for this board is active, explicitly allow the loader to supersede that version immediately before activating this target."
+        }
+      }
+    },
+    "curriculumVersionByNaturalKey": {
+      "title": "Create or match curriculum version",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "academicYear"
+      ],
+      "properties": {
+        "academicYear": {
+          "$ref": "#/$defs/nonBlank64",
+          "description": "Persisted board-scoped natural key; the database does not impose a year format."
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 200
+        },
+        "effectiveFrom": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "sourceRef": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1000
+        },
+        "finalStatus": {
+          "$ref": "#/$defs/curriculumVersionStatus"
+        },
+        "supersedeActive": {
+          "type": "boolean",
+          "default": false,
+          "description": "When finalStatus requires activation and another version for this board is active, explicitly allow the loader to supersede that version immediately before activating this target."
+        }
+      }
+    },
+    "curriculumVersionStatus": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active",
+        "superseded"
+      ],
+      "default": "draft"
+    },
+    "class": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "subjects"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/nonBlank200",
+          "description": "Board-scoped class natural key."
+        },
+        "subjects": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/subject"
+          }
+        }
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "chapters"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/nonBlank200",
+          "description": "Natural key within the enclosing class and target curriculum version."
+        },
+        "chapters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/chapter"
+          }
+        }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "seq",
+        "title",
+        "learningOutcomes"
+      ],
+      "properties": {
+        "seq": {
+          "type": "integer",
+          "description": "Persisted natural key within the version-owned subject. No positivity rule is invented because neither the database nor API has one."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "pattern": ".*\\S.*"
+        },
+        "derivedFrom": {
+          "$ref": "#/$defs/chapterSelector",
+          "description": "Optional prior-version lineage selector. The loader resolves this persisted natural coordinate to derivedFromChapterId through list/read API calls."
+        },
+        "learningOutcomes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/learningOutcome"
+          }
+        }
+      }
+    },
+    "chapterSelector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "academicYear",
+        "className",
+        "subjectName",
+        "chapterSeq"
+      ],
+      "properties": {
+        "academicYear": {
+          "$ref": "#/$defs/nonBlank64"
+        },
+        "className": {
+          "$ref": "#/$defs/nonBlank200"
+        },
+        "subjectName": {
+          "$ref": "#/$defs/nonBlank200"
+        },
+        "chapterSeq": {
+          "type": "integer"
+        }
+      }
+    },
+    "learningOutcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "description"
+      ],
+      "properties": {
+        "code": {
+          "$ref": "#/$defs/nonBlank100",
+          "description": "Required by this importer as the durable chapter-scoped idempotency key, although the database column itself is nullable."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 4000,
+          "pattern": ".*\\S.*"
+        }
+      }
+    }
+  }
+}
